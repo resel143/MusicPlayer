@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <title>Learning Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <a class="btn btn-primary">Click Me</a> -->
+    <div class="container mt-2" id="head_container">
+        <div class="row">
+          <div class="col col-3">
+            <figure>
+                <img src="data:image/jpeg;base64,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" alt="SelG" />
+                <figcaption id='figCap'>
+                    Selena Gomez
+                </figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <div class="row">
+                <h1>Selena Gomez Playlist</h1>
+            </div>
+            <div class="row pt-3">
+                <div class="col">
+                    <h2>1073 Playlist</h2>
+                </div>
+                <div class="col">
+                    <h2>273 Albums</h2>
+                </div>
+            </div>
+            <!-- <div class="row"></div> -->
+            <div class="row pt-5">
+                <div class="col">
+                    <div class="btn btn-outline-danger">Play All</div>
+                </div>
+                <div class="col">
+                    <div class="btn btn-outline-primary">See All</div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Song by</th>
+                        <th scope="col">Option</th>
+                        <th scope="col">%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Lose You to Love me</td>
+                        <td>Selena Gomez</td>
+                        <td><div class="btn btn-outline-primary btn-sm" onclick="lytlm()">Play</div></td>
+                        <td><div class="btn btn-outline-danger btn-sm" onclick="stop()">Stop</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>I can't get enough</td>
+                        <td>Selena Gomez ft. Benny</td>
+                        <td><div class="btn btn-outline-primary btn-sm" onclick="icge()">Play</div></td>
+                        <td><div class="btn btn-outline-danger btn-sm" onclick="stop()">Stop</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>I want you to know</td>
+                        <td>Selena Gomez ft. Zedd</td>
+                        <td><div class="btn btn-outline-primary btn-sm" onclick="iwytk()">Play</div></td>
+                        <td><div class="btn btn-outline-danger btn-sm" onclick="stop()">Stop</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Naturally</td>
+                        <td>Selena Gomez</td>
+                        <td><div class="btn btn-outline-primary btn-sm" onclick="n()">Play</div></td>
+                        <td><div class="btn btn-outline-danger btn-sm" onclick="stop()">Stop</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>Rare</td>
+                        <td>Selena Gomez</td>
+                        <td><div class="btn btn-outline-primary btn-sm" onclick="rare()">Play</div></td>
+                        <td><div class="btn btn-outline-danger btn-sm" onclick="stop()">Stop</div></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">6</th>
+                        <td>Slow down the Song</td>
+                        <td>Selena Gomez</td>
+                        <td><div class="btn btn-outline-primary btn-sm" onclick="sdts()">Play</div></td>
+                        <td><div class="btn btn-outline-danger btn-sm" onclick="stop()">Stop</div></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+      </div>
+    <script src="app.js"></script>
+</body>
+</html>
