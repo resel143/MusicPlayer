@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    background-color: #B6E2D3;
+}
+table{
+    font-family: 'Pacifico', cursive;
+    background-color: #FAE8E0;
+    border-radius:5px ;
+}
+tr{
+    border-bottom: 1px solid black;
+}
+tr:hover{
+    background-color: #c67ace;
+    color: white;
+    cursor: pointer;
+}
+.row{
+    background-color: #EF7C8E;
+    border-radius: 5px;
+}
+    .col{
+        border: 2px solid yellow;
+        align-items: center;
+    }
+#head_container{
+    height: 30%;
+}
+figure{
+    margin: 20px;
+}
+img{
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+img:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+#figCap, h1{
+    text-align: center;
+    color: white;
+    font-family: 'Zen Dots', cursive;
+    padding-top: 5px;
+}
+h2{
+    font-family: 'RocknRoll One', sans-serif;
+    color: #f50c0c;
+    text-align: center;
+}
